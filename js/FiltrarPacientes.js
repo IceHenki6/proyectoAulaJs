@@ -1,4 +1,4 @@
-let inputBusqueda = document.querySelector('#buscar-paciente');
+let inputBusqueda = document.querySelector('#filtrar-paciente');
 
 inputBusqueda.addEventListener('input', function(){
     let pacientes = document.querySelectorAll('.paciente');

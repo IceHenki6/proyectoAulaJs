@@ -133,3 +133,7 @@ button[disabled=disabled], button:disabled {
 	border: 1px solid red;
 	color: red;
 }
+
+.hidden{
+	display: none;
+}

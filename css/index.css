@@ -49,6 +49,7 @@ section h2{
 	padding-bottom: .5em;
 	border-bottom: 1px solid #ccc;
 	margin-bottom: .5em;
+	width:95%;
 }
 
 table{
@@ -63,6 +64,12 @@ td, th {
 	margin: 0;
 	border: 1px solid #ccc;
 	text-align: center;
+}
+
+thead th:nth-child(6){
+	width: 5%;
+	background-color: white;
+	border: none;
 }
 
 th{
@@ -136,4 +143,29 @@ button[disabled=disabled], button:disabled {
 
 .hidden{
 	display: none;
+}
+
+.resaltar{
+	background-color: rgb(198, 238, 198);
+}
+
+.fadeOut{
+	opacity: 0;
+	transition:0.5s;
+}
+
+#delete-cell{
+	background-color: white;
+	border: none;
+	width: 5%;
+}
+
+#delete-btn{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 2vw;
+	padding: 0;
+	margin: 0 auto auto .6vw;
+	background-color: rgb(203, 49, 49);
 }

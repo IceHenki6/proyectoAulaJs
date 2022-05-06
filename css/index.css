@@ -140,11 +140,12 @@ button{
     clear: both;
     margin: 10px 0px;
 	border-radius: 20px;
-	box-shadow: 3px 3px 15px -5px #818181;;
+	box-shadow: 3px 3px 15px -5px #818181;
 }
 
 button:hover{
 	background-color:rgba(105, 218, 143, 0.933);
+	box-shadow: 3px 3px 15px -5px #727272;
 }
 
 button:active{

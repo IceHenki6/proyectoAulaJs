@@ -3,16 +3,21 @@
  }
 
 body{
-	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	/* font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; */
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 }
 
 header{
-	background-color: #333;
-	height: 3em;
-	color: #FFF;
+	/* background-color: rgba(66, 187, 106, 0.933); */
+	background: linear-gradient(rgba(88, 200, 125, 0.933), rgba(56, 137, 83, 0.933));
+	height: 5em;
+	color: white;
 	margin-bottom: 1em;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
 }
+
 
 header h1{
 	font-size: 2em;
@@ -25,17 +30,23 @@ header h2{
 	vertical-align:	middle;
 }
 
-header .container:before{
+header .container-header:before{
 	content: '';
 	display:inline-block;
 	height: 100%;
 	vertical-align:	middle;
 }
 
+.container-header{
+	width: 95%;
+	height: 100%;
+	margin: 0 auto;
+}
+
 .container{
 	width: 60%;
 	height: 100%;
-	margin: 0 auto;
+	margin: 3em auto;
 }
 
 section{
@@ -45,6 +56,7 @@ section{
 
 section h2{
 	font-size: 3em;
+	color: rgba(56, 137, 83, 0.933);
 	display: block;
 	padding-bottom: .5em;
 	border-bottom: 1px solid #ccc;
@@ -52,9 +64,18 @@ section h2{
 	width:95%;
 }
 
+#filtrar-paciente{
+	width: 250px;
+	height: 35px;
+	margin-bottom: 10px;
+	border: 2px solid rgba(88, 200, 125, 0.933);
+	border-radius: 10px;
+}
+
+
 table{
 	width: 100%;
-	margin-bottom : .5em;
+	margin-bottom : 1.5em;
     table-layout: fixed;
 
 }
@@ -87,9 +108,11 @@ label{
 	margin: 0;
 	padding-bottom: 1em;
 	width: 100%;
-	border: 1px solid #ccc;
+	/* border: 1px solid #ccc; */
+	border: 2px solid rgba(88, 200, 125, 0.933);
 	padding: .7em;
 	width: 100%;
+	border-radius: 10px;
 }
 
 .campo-medio{
@@ -106,19 +129,22 @@ label{
 button{
 	padding: .5em 2em;
 	border: 0;
-	border-bottom: 3px solid;
 	font-size: 1.2em;
 	cursor: pointer;
 	margin: 0;
 	margin-top: -3px;
 	color: #fff;
-	background-color:#0c8cd3;
-	border-color: #04324c;
+	background-color:rgba(88, 200, 125, 0.933);
 	width: 20%;
     display: block;
     clear: both;
     margin: 10px 0px;
+	border-radius: 20px;
+	box-shadow: 3px 3px 15px -5px #818181;;
+}
 
+button:hover{
+	background-color:rgba(105, 218, 143, 0.933);
 }
 
 button:active{
@@ -168,4 +194,6 @@ button[disabled=disabled], button:disabled {
 	padding: 0;
 	margin: 0 auto auto .6vw;
 	background-color: rgb(203, 49, 49);
+	border-radius: 0%;
+	box-shadow: none;
 }

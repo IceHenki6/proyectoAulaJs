@@ -55,7 +55,7 @@ agregarBtn.addEventListener('click',function(event){
 
 function CrearTr(paciente){
     let trPaciente = document.createElement('tr');
-
+    trPaciente.classList.add('paciente');
 
 
     trPaciente.appendChild(CrearTd(paciente.nombre,'info-nombre'));
